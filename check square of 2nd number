@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main (){
+    float a, b;
+    cout<<"enter 1st number : ";
+    cin>>a;
+    cout<<"enter 2nd number : ";
+    cin>>b;
+    if(a==b*b){
+        cout<<"a is square of b";
+    }
+    else
+        cout <<"a is not square of b";
+}
