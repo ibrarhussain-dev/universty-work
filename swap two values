@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main (){
+    int a , b , tem;
+    cout<<"enter 1st value : ";
+    cin>>a;
+    cout<<"enter 2nd value : ";
+    cin>>b;
+    tem=a;
+    a=b;
+    b=tem;
+    cout<<"1st value : "<<a<<endl;
+    cout<<"2nd value : "<<b<<endl;
+    return 0;
+}
