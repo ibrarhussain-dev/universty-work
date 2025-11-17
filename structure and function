@@ -1,0 +1,144 @@
+#include<iostream>
+#include<iomanip>
+#include<string>
+using namespace std;
+
+struct employee{
+    string name;
+    int employee_id;
+    string post;
+    float  pay;
+};
+    struct Doctor {
+    int id;
+    string name;
+    string specialization;
+    int experience;   
+    string hospital;
+};
+struct Car {
+    int id;
+    string brand;
+    string model;
+    int year;
+    float price;
+};
+struct Pate {
+    string name;
+    int age;
+    string gender;
+    string disease;
+};
+struct teacher {
+    string name;
+    string subject;
+    int experience;   
+    string department;
+};
+    void line(){
+        cout<<"----------------------------------"<<endl;
+    }
+    void bari()
+    {
+        cout<<setw(20)<<"Employee Information:"<<endl;
+        line();
+        employee a ;
+        a.name = "bari";
+        a.employee_id = 075;
+        a.post = "software engineer";
+        a.pay = 150000;
+        cout<<"Name        = "<<a.name<<endl;
+        cout<<"Employee Id = "<<a.employee_id<<endl;
+        cout<<"Post        = "<<a.post<<endl;
+        cout<<"Salary      = "<<a.pay<<endl;
+        line();
+    }
+    void Ahmad()
+    {
+        cout<<setw(20)<<"Teacher Information:"<<endl;
+        line();
+        teacher a ;
+        a.name = "Ahmad";
+        a.subject = "Programming Fundamentals";
+        a.experience = 15;
+        a.department = "Information Technology";
+        cout<<"Name       :"<<a.name<<endl;
+        cout<<"Subject    :"<<a.subject<<endl;
+        cout<<"Experience :"<<a.experience<<endl;
+        cout<<"department :"<<a.department<<endl;
+        line();
+    }
+    void ali()
+    {
+        cout<<setw(20)<<"Patient Information:"<<endl;
+        line();
+        Pate a ;
+        a.name = "ahsan ali";
+        a.age = 23;
+        a.gender = "Male";
+        a.disease = "flue";
+        cout<<"Name    : "<<a.name<<endl;
+        cout<<"Age     : "<<a.age<<endl;
+        cout<<"Gender  : "<<a.gender<<endl;
+        cout<<"Disease : "<<a.disease<<endl;
+        line();
+    }
+    void porche()
+    {
+        cout<<setw(20)<<"Car Information:"<<endl;
+        line();
+        Car a ;
+        a.id = 001;
+        a.brand = "Porche";
+        a.model = "911 Turbo S";
+        a.year = 2022;
+        a.price = 204000;
+        cout<<"Car ID    : "<<a.id<<endl;
+        cout<<"Brand     : "<<a.brand<<endl;
+        cout<<"Model     : "<<a.model<<endl;
+        cout<<"Year      : "<<a.year<<endl;
+        cout<<"Price     : "<<a.price<<endl;
+        line();
+    }
+    void doc()
+    {
+        cout<<setw(20)<<"Doctor Information:"<<endl;
+        line();
+        Doctor a ;
+        a.id = 101;
+        a.name = "Dr. Sarah Johnson";
+        a.specialization = "Cardiology";
+        a.experience = 10;
+        a.hospital = "City Hospital";
+        cout<<"Doctor ID           : "<<a.id<<endl;
+        cout<<"Name                : "<<a.name<<endl;
+        cout<<"Specialization      : "<<a.specialization<<endl;
+        cout<<"Experience in years : "<<a.experience<<endl;
+        cout<<"Hospital   name     : "<<a.hospital<<endl;
+        line();
+    } 
+    int main(){
+        char n;
+        cout<<"enter a number :";
+        cin>>n;
+        if(n=='t'){
+            Ahmad();
+        }
+        if(n=='e'){
+            bari();
+        }
+        if(n=='p'){
+            ali();
+        }
+        if(n=='c'){
+            porche();
+        }   
+        if(n=='d'){
+            doc();
+        }   
+        else{
+            cout<<"invalid input";
+        }
+        return 0;
+     }
+
