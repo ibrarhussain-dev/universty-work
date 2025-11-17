@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+
+int sum(int x,int y){
+	return x+y;
+}
+int mul(int x,int y){
+	return x*y;
+}
+int divi(int x, int y){
+	return x/y;
+}
+void starline(char c, int n){
+	for (int i=1;i<=n;i++)
+	cout<<c;
+	cout<<endl;
+}
+int main(){
+	int x,y,n; char c;
+	cout<<"Give Value of X: ";
+	cin>>x;
+	cout<<"Give Value of Y:";
+	cin>>y;
+	cout<<"Give Character to Display:";
+	cin>>c;
+    cout<<"enter how much you want to display :";
+    cin>>n;
+	cout<<"Sum is: "<<sum(x,y);
+    cout<<endl;
+	starline(c,n);
+	cout<<"Product is: "<<mul(x,y);
+    cout<<endl;
+	starline(c,n);
+	cout<<"div is: "<<divi(x,y);
+    cout<<endl;
+	starline(c,n);
+}
